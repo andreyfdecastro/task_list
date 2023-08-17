@@ -14,3 +14,8 @@ this.price = price
 this.category = category;
 }
 }
+
+class CategoryService{
+constructor(){
+}
+}
