@@ -27,7 +27,8 @@ h2{
 margin-top: 1.25rem;
 }
 
-.form-container {
+.form-container input,
+select {
 border: 1px solid #ccc;
 padding: 1.25rem;
 margin-bottom: 1.25rem;
@@ -40,13 +41,27 @@ display: block;
 margin-bottom: 0.31rem ;
 }
 
-.form-container input[type="text"]{
+.form-container input[type="text"]{    
 width: 100%;
 padding: 0.62rem;
 margin-bottom: 0.62rem;
 border: 1px solid #ccc;
 border-radius: 3px;
 box-sizing:border-box;
+}
+
+#productInfos{
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 0.62rem;
+}
+
+.productInput{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100% ;
 }
 
 .btn{
@@ -62,5 +77,28 @@ transition: backgroud-color 0.3s ease, transform 0.3s ease;
 .btn:hover{
 background-color: #e60e0e;
 color: #fff;
-transform: scale(1.01);
+transform: scale(1.02);
+}
+
+.list-container{
+background-color: #f9f9f9;
+padding: 1rem;
+border: 1px solid #ccc;
+border-radius: 6px;
+max-width: 20rem;
+overflow-y: auto;
+}
+
+.list-container ul{
+list-style: none;
+padding:0;
+margin: 0;
+}
+
+.list-container ul{
+    margin-bottom: 0.62rem;
+    padding: 0.62rem;
+    background-color: #fff;
+    border: 1px;
+    border-radius: 3px;
 }

@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./asset/css/style.css">
-   <script src="./asset/js/script.js"></script>
+    <link rel="stylesheet" href=".//asset/css/style.css">
+    <script src="./asset/js/script.js"></script>
     <title>Document</title>
 </head>
+
 <body>
+    <main>
     <div id="container">
         <h1>🛒 categorias & Produtos</h1>
         <div id="form-container">
             <h2> 📦 Criar Categoria</h2>
-            <label for=""></label> Nome da Categoria</label>
-            <input type="text" id="categoryName">
-            <button> Criar Categoria</button>
+            <label for="productName"></label> Nome da Categoria</label>
+            <input type="text" id="categoryName" required>
+            <button class="btn"> Criar Categoria:</button>
         </div>
-    </div>
+
+        <div class="form-container">
+            <h2> ✒ Criar Produto:</h2>
+
+            <div id="productInfos">
+                <div class="productInputs">
+                    <label for="Nome do Produto"></label>
+                    <input type="text" id="productName" required>
+
+                </div>
+                <div id="productInfos">
+                    <div class="productInputs">
+                        <label for="Nome do Produto">💲 Preços:</label>
+                        <input type="number" id="productName" required>
+                    </div>
+                </div>
+                <label for="Categoria"></label>
+                <select name="" id="productCategory" required></select>
+                </div>
+                <select name="btn" id="">Criar Produto</select>
+
+                <div class="List-container">
+                    <h2>Categora & Produtos</h2>
+                     <ul id="categoriesList"></ul>
+                </div>
+                
+            </div>
+        </main>
 </body>
+
 </html>
