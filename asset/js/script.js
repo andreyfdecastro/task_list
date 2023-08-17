@@ -20,20 +20,34 @@ class CategoryService {
         this.categories = [];
         this.nextCategoryId = 0;
     }
-    
+
     addCategory(name) {
-    const id = this.nextCategoryId++;
-    const category = new Category(id, name);
-    this.categories.push(category);  
+        const id = this.nextCategoryId++;
+        const category = new Category(id, name);
+        this.categories.push(category);
+    }
+}
+
+class productService {
+    constructor() {
+        this.products = []
+        this.nextCategoryId = 0
+    }
+
+    addProdut(name, price, category) {
+        const id = this.nextproductId++;
+        const products = new Product(id, name, price, category);
+        category.products.push(products);
+        this.products.push(product);
     }
 }
 
 const categoryList = new CategoryService();
 
-function creatCategory(){
-const categoryname = "Doce";
+function creatCategory() {
+    const categoryname = "Doce";
 
-categoryList.addCategory(categoryName);
+    categoryList.addCategory(categoryName);
 
-console.log(categoryList.categories);
+    console.log(categoryList.categories);
 }
